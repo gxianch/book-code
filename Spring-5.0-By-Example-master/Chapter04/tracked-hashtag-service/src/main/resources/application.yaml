@@ -1,0 +1,19 @@
+spring:
+  rabbitmq:
+    host: 10.10.1.63
+    username: admin
+    password: admin
+    port: 5672
+  redis:
+    host: 10.10.1.63
+    port: 23308
+
+server:
+  port: 9090
+
+queue:
+  twitter: twitter-track-hashtag
+exchange:
+  twitter: twitter-track-exchange
+routing_key:
+  track: "*"

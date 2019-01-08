@@ -1,0 +1,37 @@
+twitter:
+  consumer-key: YkhRdFSLy2zALXXOCdheLmWA8
+  consumer-secret: SJihcpUZ9BGCHUgerhxj2UWHwW9y2xe8921dOfONJS0qjRlnYk
+  access-token: 1905954415-itJHWP3jiV03jazgfUhtmJx1eDe3gJPsWB1Td9q
+  access-token-secret: N3DhMpP2wRN9ujtbfuT4sUNYIsD3KXfVKIil2abOBsqPf
+
+spring:
+  rabbitmq:
+    host: 10.10.1.63
+    username: admin
+    password: admin
+    port: 5672
+
+# queue:
+#   twitter: twitter-track-hashtag
+# exchange:
+#   twitter: twitter-track-exchange
+# routing_key:
+#   track: "*"
+queue:
+  twitter: twitter-stream
+exchange:
+  twitter: twitter-exchange
+routing_key:
+  track: track.*
+
+server:
+  port: 8081
+
+info:
+  project: "twitter-gathering"
+  kotlin: @kotlin.version@
+
+management:
+  endpoints:
+    web:
+      expose: "*"

@@ -1,0 +1,14 @@
+spring:
+  rabbitmq:
+    host: 10.10.1.63
+    username: admin
+    password: admin
+    port: 5672
+
+queue:
+  twitter: twitter-stream
+exchange:
+  twitter: twitter-exchange
+
+server:
+  port: 9099
